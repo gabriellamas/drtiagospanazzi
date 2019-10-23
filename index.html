@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Dr Tiago Spanazi</title>
+    <meta name="description" content="Site de um Dentista brasileiro que atende em Sorocaba - SP">
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+    <title>Dentista | Dr. Tiago Spanazi </title>
 
     <link rel="stylesheet" href="./style.css">
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900&display=swap" rel="stylesheet">
@@ -15,47 +17,65 @@
 
     <header>
         <div class="container">
-            <p>Dr Tiago Spanazzi</p>
+            <div class="contatos">
+                <p><img src="./img/icon-whatsapp.svg" alt="Dentista Dr Tiago Spanazzi"/> (15) 9 9849-3826</p>
+                <p><img src="./img/icon-telephone.svg" alt="Dentista Dr Tiago Spanazzi"/> (15) 4101-1043</p>
+                <p><img src="./img/icon-instagram.svg" alt="Dentista Dr Tiago Spanazzi"/> Drtiagospanazzi</p>
+                <p><img src="./img/icon-facebook.svg" alt="Dentista Dr Tiago Spanazzi"/> Dr Tiago Spanazzi </p>
+
+                <p><img src="./img/icon-place.svg" alt="Dentista Dr Tiago Spanazzi"/>Av Washington Luiz, 310 - Sorocaba | Sala 38</p>
+            </div>
         </div>
     </header>
 
     <section class="section-one">
         <div class="container">
-            <h1>Dr Tiago Spanazzi
-                <span>
-                    Você já cuidou do seu sorriso hoje? Conheça o seu novo dentisa, agende uma consulta :)
-                </span>
-            </h1>   
 
-            <a href="#" class="btn btn-line">Saiba mais</a>   
-            <a href="#" class="btn btn-cta">Contato</a>   
+            <div class="first-area">
+                <!-- <img class="icon-dentista" src="./img/Tooth-Icon.png" alt="Dentista Dr. Tiago Spanazzi"> -->
+                <h1>
+                    Dr Tiago Spanazzi
+                    <div class="auxiliars">
+                        <span class="cro">
+                            <img class="icon-dentista" src="./img/icon-tooth.svg" alt="Dentista Dr. Tiago Spanazzi"/>
+                            Cirurgião Dentista | CRO: 118827
+                        </span>
+                    </div>
+                    <!-- <span class="effect">
+                        Você já cuidou do seu sorriso hoje? Conheça o seu novo dentisa, agende uma consulta :)
+                    </span> -->
+                </h1>   
+
+                <div class="contatos">
+                    <p><img src="./img/icon-whatsapp.svg" alt="Dentista Dr Tiago Spanazzi"/> (15) 9 9849-3826</p>
+                    <p><img src="./img/icon-telephone.svg" alt="Dentista Dr Tiago Spanazzi"/> (15) 4101-1043</p>
+                    <p><img src="./img/icon-instagram.svg" alt="Dentista Dr Tiago Spanazzi"/> Drtiagospanazzi</p>
+                    <p><img src="./img/icon-facebook.svg" alt="Dentista Dr Tiago Spanazzi"/> Dr Tiago Spanazzi </p>
+
+                    <p><img src="./img/icon-place.svg" alt="Dentista Dr Tiago Spanazzi"/>Av Washington Luiz, 310 - Sorocaba | Sala 38</p>
+                </div>
+            </div>  
+
+            <a href="#saiba-mais" class="btn btn-line anchor">Conheça</a>   
+            <a href="https://wa.me/5515998493826" target="_Blank" class="btn btn-cta"><img src="./img/icon-whatsapp-white.svg" alt="Dentista Dr Tiago Spanazzi"/>Agendar Whatsapp</a>
+
         </div>
-
-        <div class="bg-cliped"></div>
-        
-        <a href="#" class="arrow-down-bt">
-            <img class="arrow-down" src="./img/dentista-arrow.svg" alt="Dentista Dr Tiago Spanazzi"/>
-        </a>
     </section>
 
-    <section class="section-two">
+    <section class="section-two" id="saiba-mais">
         <div class="container">
-            <h2>Perfil</h2>
+            <h2>Conheça</h2>
 
-            <article>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis ab cupiditate in quisquam ipsam alias! Commodi perspiciatis architecto laudantium! Necessitatibus deleniti amet veritatis maiores beatae temporibus nesciunt velit obcaecati maxime.
-            </article>
-            <article>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis ab cupiditate in quisquam ipsam alias! Commodi perspiciatis architecto laudantium! Necessitatibus deleniti amet veritatis maiores beatae temporibus nesciunt velit obcaecati maxime.
-            </article>
-            <article>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis ab cupiditate in quisquam ipsam alias! Commodi perspiciatis architecto laudantium! Necessitatibus deleniti amet veritatis maiores beatae temporibus nesciunt velit obcaecati maxime.
-            </article>
-            <article>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis ab cupiditate in quisquam ipsam alias! Commodi perspiciatis architecto laudantium! Necessitatibus deleniti amet veritatis maiores beatae temporibus nesciunt velit obcaecati maxime.
-            </article>
+            <p>
+                Dr. Tiago é experiente em diagnóstico e planejamento de tratamentos odontológicos e implantes dentários, tem como objetivo principal promover a saúde funcional e estética do paciente. 
+                <span>Atualização em implantodontia pela universidade de São Paulo (USP).</span> 
+                <span>Curso facetas e laminados com equipe Sato & Sapata.</span>
+            </p>
+
         </div>
     </section>
     
+
+    <script src="./index.js"></script>
 </body>
 </html>
