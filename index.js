@@ -23,3 +23,17 @@ function scrollToSection(event){
     }
    
 }
+
+const Header = document.querySelector('header')
+
+window.addEventListener('scroll', function(e) {
+    last_known_scroll_position = window.scrollY;
+
+    if(last_known_scroll_position >= 356){
+        Header.style.opacity = '1';
+        Header.style.pointerEvents = 'auto';
+    }else{
+        Header.style.opacity = '0';
+        Header.style.pointerEvents = 'none';
+    }
+  });
