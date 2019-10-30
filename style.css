@@ -116,7 +116,7 @@ header .contatos .btn-cta{
     display: flex;
     align-items: center;
     justify-content: center;
-    background:url('./img/bg-dentista-dr-tiago-spanazzi.png') no-repeat top right;
+    background:url('./img/bg-dentista-dr-tiago-spanazzi-2.png') no-repeat top right;
 }
 
 /* .icon-dentista{
@@ -193,12 +193,12 @@ header .contatos .btn-cta{
 
 .btn-cta{
     position: relative;
-    background:#1ebea5;
+    background:#6f3240;
     color:#fff;
     display: inline-flex;
     align-items: center;
     padding:15px 25px 15px 25px;
-    border:1px solid #1ebea5;
+    border:1px solid #6f3240;
 }
 .btn-icon{
     padding:15px 25px 15px 48px;
@@ -212,16 +212,16 @@ header .contatos .btn-cta{
     margin-right: 10px;
 }
 .btn-cta:hover{
-    background:#1cd1b6;
+    background:#8d263d;
 }
 .btn-line{
     color:#6b6b6b;
-    background:rgba(0,0,0,0);
+    background:rgba(255,255,255,1);
     /*border:1px solid #c9c9c9;*/
 }
 .btn-line:hover{
-    border:1px solid #1ebea5;
-    color:#1ebea5;
+    border:1px solid #6f3240;
+    color:#8d263d;
 }
 .btn-white{
     background:#fff;
@@ -236,13 +236,17 @@ header .contatos .btn-cta{
     margin-top: 24px;
     margin-bottom: 32px;
 }
-.contatos p{
+.contatos p, a{
     display: flex;
     align-items: center;
     justify-content: flex-start;
     margin:0px 20px 15px 0px;
     font-size:14px;
-    opacity: 0.9;
+    text-decoration: none;
+    color:#000;
+}
+.contatos a:hover{
+    text-decoration:underline;
 }
 .contatos .icon-contato{
     width:15px;
@@ -302,4 +306,23 @@ h2{
     height: 400px;
     width: 100%;
     border:1px solid red;
+}
+
+@media (max-width: 1170px){
+    .section-one{
+        background: none;
+        /*background: url(./img/bg-dentista-dr-tiago-spanazzi-bg-mobile.png) no-repeat  left top;*/
+    }
+    .section-one > .container{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .section-one > .container a.anchor{
+        order: 2;
+    }
+    .section-one > .container .btn{
+        width: 100%;
+    }
 }
