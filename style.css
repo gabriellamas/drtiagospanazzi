@@ -65,6 +65,18 @@ a,button, p{
     font-family: 'Open Sans', sans-serif;
 }
 
+.flex-area{
+    display:flex;
+}
+.wrap{
+    flex-wrap:wrap;
+}
+.j-space-between{
+    justify-content: space-between;
+}
+.w-100{
+    width:100%;
+}
 .container{
     position: relative;
     margin:0px auto;
@@ -119,14 +131,6 @@ header .contatos .btn-cta{
     background:url('./img/bg-dentista-dr-tiago-spanazzi-2.png') no-repeat top right;
 }
 
-/* .icon-dentista{
-    position:absolute;
-    top:0%;
-    right:50%;
-    width:50px;
-    transform: translate(0%,-50%) rotate(0deg);
-    opacity: 1;
-}  */
 
 
 .section-one > .container{
@@ -179,6 +183,7 @@ header .contatos .btn-cta{
 
 .btn{
     padding:15px 25px;
+    cursor:pointer;
     background: none;
     font-size: 16px;
     transition: 300ms;
@@ -189,25 +194,28 @@ header .contatos .btn-cta{
     text-decoration: none;
     box-shadow: 0px 2px 5px rgba(0,0,0,0.2);
     border:1px solid #fff;
+    max-width: 500px;
+}
+.btn span{
+    position: relative;
+    display: inline-block;
+    margin-left: 40px;
 }
 
 .btn-cta{
     position: relative;
     background:#6f3240;
     color:#fff;
-    display: inline-flex;
     align-items: center;
     padding:15px 25px 15px 25px;
     border:1px solid #6f3240;
 }
-.btn-icon{
-    padding:15px 25px 15px 48px;
-}
+
 .btn-cta img{
     position:absolute;
-    left:20px;
+    left:0px;
     top:50%;
-    transform:translate(0%,-50%);
+    transform:translate(-140%,-50%);
     width: 20px;
     margin-right: 10px;
 }
@@ -225,6 +233,9 @@ header .contatos .btn-cta{
 }
 .btn-white{
     background:#fff;
+}
+.btn-icon{
+
 }
 
 
@@ -277,6 +288,7 @@ header .contatos .btn-cta{
 .section-two > .container > div{
     width: 45%;
     padding-right: 50px;
+    text-align: justify;
 }
 .section-two > .container img{
     width: 55%;
@@ -298,20 +310,48 @@ h2{
     min-height: 600px;
     height: auto;
     padding:90px 0px;
+    background: url('./img/dentista-dr-tiago-spanazzi-tratamentos.png') no-repeat right top;
 }
 
 
 .tratamentos-area{
     position: relative;
-    height: 400px;
-    width: 100%;
-    border:1px solid red;
+    height: auto;
+    width: 80%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
 }
 
+.tratamentos-area a{
+    width: 150px;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    border:1px solid rgba(0,0,0,0.2);
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+    background:#fff;
+}
+.tratamentos-area a p{
+    padding:10px 0px;
+}
+.tratamentos-area a img{
+    width: 100%;
+}
+
+@media (max-width: 1315px){
+    .section-three{
+        background-position: 115% 0%;
+    }
+}
 @media (max-width: 1170px){
     .section-one{
-        background: none;
+        background:none;
         /*background: url(./img/bg-dentista-dr-tiago-spanazzi-bg-mobile.png) no-repeat  left top;*/
+    }
+    .section-one h1{
+        font-size: 45px;
     }
     .section-one > .container{
         display: flex;
@@ -322,7 +362,67 @@ h2{
     .section-one > .container a.anchor{
         order: 2;
     }
-    .section-one > .container .btn{
+    .section-one > .container .btn {
         width: 100%;
+    }
+    .section-one > .container .btn  + .btn{
+        margin-bottom: 15px;
+    }
+
+    header{
+        top:100%;
+        transform: translate(0%,-100%);
+    }
+    header .contatos p {
+        display: none;
+    }
+    header .contatos .btn-cta {
+        margin:0px auto;
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .section-two > .container{
+        flex-wrap: wrap;
+    }
+    .section-two > .container > div{
+        width: 100%;
+        padding-right: 0px;
+    }
+    .section-two > .container img{
+        width: 100%;
+    }
+    .btn{
+        max-width: 100%;
+        width: 100%;
+    }
+    .section-three{
+        background:none;
+      
+    }
+    .tratamentos-area{
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 547px){
+    .tratamentos-area a{
+        margin:10px;
+    }
+    h2{
+        font-size: 50px;
+    }
+}
+
+@media (max-width: 392px){
+    .section-one h1{
+        font-size: 38px;
+    }
+    .auxiliars .cro{
+        font-size: 18px;
+    }
+    .auxiliars .cro .icon-dentista{
+        width: 15px;
     }
 }
