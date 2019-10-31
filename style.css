@@ -100,9 +100,11 @@ header .contatos{
 }
 header .contatos p{
     margin-bottom: 0px;
+    font-size: 18px;
 }
 header .contatos .icon-dentista{
     margin-left:10px;
+    width: 20px;
 }
 header .contatos .btn-cta{
     margin-left:auto;
@@ -144,7 +146,9 @@ header .contatos .btn-cta{
     border: none;
     display: none;
 }
-
+.section-one .btn-cta{
+    margin-left:10px;
+}
 .section-one h1{
     font-size: 62px;
     font-weight: 600;
