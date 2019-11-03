@@ -1,0 +1,103 @@
+.header-page{
+    height: 300px;
+    background: #6f3240;
+    display: flex;
+    align-items: center;
+}
+h1{
+    position:absolute;
+    top:0px;
+    left: 50px;
+    font-size: 60px;
+    font-weight: bold;
+    margin-bottom: 32px;
+    transform: translate(0, -150%);
+    color:#fff;
+}
+.container-header{
+    padding:0px;
+    max-width: 800px;
+}
+p{
+    text-align: justify;
+    margin-bottom:16px;
+    line-height: 22px;
+}
+h2{
+    font-size: 40px;
+    margin-top:32px;
+}
+.content-page{
+    background: url('../img/dentista-dr-tiago-spanazzi-pathern.png');
+    position: relative;
+}
+.container-body{
+    box-shadow: 0px 5px 10px rgba(0,0,0,.2);
+    border-radius:10px;
+    background: #fff;
+    transform: translate(0%,-10%);
+    padding:50px;
+    max-width: 800px;
+    width:90%;
+}
+.bold{
+    font-weight: 600;
+}
+
+@media(max-width: 640px){
+    h1{
+        font-size: 50px;
+    }
+    .container-body{
+        transform: translate(0%,-5%);
+    }
+}
+
+@media(max-width: 545px){
+    h1{
+        font-size: 45px;
+    }
+}
+@media(max-width: 490px){
+    h1{
+        font-size: 35px;
+        left:30px;
+    }
+    h2{
+        font-size: 30px;
+    }
+    .header-page{
+        height: 250px;
+    }
+    .container-body{
+        padding:30px 30px;
+    }
+    p{
+        font-size:14px;
+        margin-bottom: 25px;
+    }
+}
+
+@media(max-width: 369px){
+    h1{
+        font-size: 30px;
+        left:30px;
+    }
+    h2{
+        font-size: 25px;
+    }
+
+    .container-body{
+        transform: translate(0%,-4%);
+        padding: 30px 25px;
+    }
+}
+
+
+
+@media (max-width: 340px){
+    .section-one h1{
+        font-size: 34px;
+    }
+}
+
