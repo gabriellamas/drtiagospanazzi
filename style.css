@@ -443,3 +443,9 @@ h2{
         width: 15px;
     }
 }
+
+@media (max-width: 338px){
+    .section-one h1{
+        font-size: 35px;
+    }
+}
