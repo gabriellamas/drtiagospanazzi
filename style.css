@@ -32,7 +32,8 @@ button{
     cursor:pointer;
 }
 body {
-	line-height: 1;
+    line-height: 1;
+    background: #fff;
 }
 ol, ul {
 	list-style: none;
@@ -355,7 +356,7 @@ h2{
         /*background: url(./img/bg-dentista-dr-tiago-spanazzi-bg-mobile.png) no-repeat  left top;*/
     }
     .section-one h1{
-        font-size: 45px;
+        font-size: 42px;
     }
     .section-one > .container{
         display: flex;
@@ -420,7 +421,7 @@ h2{
     }
 }
 
-@media (max-width: 392px){
+@media (max-width: 395px){
     .section-one h1{
         font-size: 38px;
     }
