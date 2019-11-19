@@ -358,11 +358,23 @@ h2{
     display: flex;
     width: 100%;
     flex-wrap: wrap;
+    max-width: 500px;
 }
 
-.footer{
+footer{
     width: 100%;
-
+    background: #6f3240;
+    clear: both;
+    padding:70px 0px;
+}
+footer .container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    color:#fff;
+}
+footer .container div{
+    border:1px solid #fff;
 }
 
 @media (max-width: 1315px){
@@ -374,6 +386,7 @@ h2{
     .mobile-pic{
         display: block;
         width: 120%;
+        margin-top:30px;
     }
     
     .section-one{
