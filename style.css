@@ -53,16 +53,16 @@ table {
 
 
 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-    color: rgba(255,255,255,0.5);
+    color: rgba(255,255,255,0.7);
   }
   ::-moz-placeholder { /* Firefox 19+ */
-    color: rgba(255,255,255,0.5);
+    color: rgba(255,255,255,0.7);
   }
   :-ms-input-placeholder { /* IE 10+ */
-    color: rgba(255,255,255,0.5);
+    color: rgba(255,255,255,0.7);
   }
   :-moz-placeholder { /* Firefox 18- */
-    color: rgba(255,255,255,0.5);
+    color: rgba(255,255,255,0.7);
   }
 
 
@@ -82,6 +82,18 @@ a,button, p{
     font-family: 'Open Sans', sans-serif;
 }
 
+ul{
+    list-style-type: initial;
+    margin-left:30px;
+    color:inherit;
+}
+li{
+    font-family: inherit;
+    font-size: 18px;
+    color: rgb(59, 59, 59);
+    line-height: 24px;
+    margin-bottom: 10px;
+}
 .flex-area{
     display:flex;
 }
@@ -316,6 +328,7 @@ header .contatos .btn-cta{
 }
 .section-two span{
     display: block;
+    margin-bottom: 30px;
 }
 
 .section-two p{
@@ -410,13 +423,16 @@ form{
     display:flex;
     flex-direction: column;
     flex-wrap:wrap;
+    font-family: inherit;
 }
 form input{
     margin-bottom:15px;
+    font-family: inherit;
 }
 form textarea{
     margin-bottom:15px;
     height: 100px;
+    font-family: inherit;
 }
 form input, form textarea{
     font-size: 14px;
@@ -445,6 +461,24 @@ form .btn-send:hover{
     color: #6f3240;
 }
 
+.instagram-icon{
+    width:20px;
+    height: auto;
+    margin-right: 10px;
+    /* display: inline-block; */
+}
+.voltar-link{
+    display: none;
+    position: fixed;
+    background: #fff;
+    padding:10px;
+    z-index: 999;
+    margin:15px;
+    transition: 300ms;
+}
+.voltar-link:hover{
+    transform: translate(-10%,0%);
+}
 @media (max-width: 1315px){
     .section-three{
         background-position: 115% 0%;
@@ -529,7 +563,27 @@ form .btn-send:hover{
         padding:40px 0px;
     }
 }
+@media (max-width: 622px){
+    .voltar-link{
+        display: flex;
+        box-shadow: 0px 5px 2px rgba(0,0,0,0.2);
+        border-radius: 2px;
+    }
 
+    footer .container div{
+      width: 100%;
+      text-align: center;
+      margin:0px 0px 80px 0px;
+    }
+    footer .container div p{
+        text-align: center;
+    }
+    footer .container div a{
+        text-align: center;
+        margin-right:0px;
+        display: block;
+    }
+}
 @media (max-width: 547px){
     .tratamentos-area a{
         margin:10px;
