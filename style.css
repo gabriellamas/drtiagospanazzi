@@ -475,6 +475,7 @@ form .btn-send:hover{
     z-index: 999;
     margin:15px;
     transition: 300ms;
+    border:none;
 }
 .voltar-link:hover{
     transform: translate(-10%,0%);
@@ -487,7 +488,7 @@ form .btn-send:hover{
 @media (max-width: 1170px){
     .mobile-pic{
         display: block;
-        width: 120%;
+        width: 100%;
         margin-top:30px;
     }
     
@@ -568,6 +569,8 @@ form .btn-send:hover{
         display: flex;
         box-shadow: 0px 5px 2px rgba(0,0,0,0.2);
         border-radius: 2px;
+        display: flex;
+        align-items: center;
     }
 
     footer .container div{

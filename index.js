@@ -97,7 +97,7 @@ const footerPages = `
                     <input type="email" name="replyTo" placeholder="Seu email" required />
                     <textarea name="message" placeholder="Sua mensagem" required></textarea>
                     <input type="submit" value="Enviar" class="btn-send"/>
-                    <input type="hidden" name="redirectURL" value="${seforbody ? './':'../'}obrigado" />
+                    <input type="hidden" name="redirectURL" value="www.drtiagospanazzi.com.br/obrigado/" />
                 </form>
             </div>  
         </div>
@@ -110,9 +110,9 @@ body.insertAdjacentHTML("beforeend", footerPages);
 
 if(!seforbody){
     const voltar = `
-        <a class="voltar-link" href="http://www.drtiagospanazzi.com.br">
-            <img src="../img/arrow_back-24px.svg" alt="Voltar para o site Cirurgiao Dentista Dr Tiago Spanazzi">Home
-        </a>
+        <button type="button" class="voltar-link" onclick="history.back()">
+            <img src="../img/arrow_back-24px.svg" alt="Voltar para o site Cirurgiao Dentista Dr Tiago Spanazzi">Voltar
+        </button>
     `
     body.insertAdjacentHTML("afterbegin", voltar);
 }
